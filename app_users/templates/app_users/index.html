@@ -1,0 +1,109 @@
+{% extends 'base.html'  %}
+{% load static %}
+{%block title %}LandIS:Home{% endblock%}
+
+{% block image_block%}
+<header id="imageBg" class="mt-1">
+<!--Image and mask-->
+          <div class="container-fluid d-flex align-items-center justify-content-center h-100  ">
+            <div class="row d-flex justify-content-center  text-center mt-1">
+              <h1></h1>
+              <h1></h1>
+              <h1></h1>
+              <br />
+              <div class="col-md-12 text-white mt-1">
+                <!-- heading -->
+                <h6 class="display-6  white-text  p-3 mb-2  " style="color:#ff5722;" > Land Information System (LIS)  </h6>
+
+                <!-- divider -->
+                <hr style="color:#ff5722;">
+
+                <!-- feedback -->
+                <div class="row d-flex mt-3 justify-content-center text-center">
+                  <div class="col-md-6 mb-3" >
+                    <blockquote>
+                      Land Information System (LIS), a management and analytics tool designed by LIS ICT team,
+                      is used to efficiently manage all aspects of land control needed in relation
+                      to land exploration and equiry.
+                    </blockquote>
+                  </div>
+                  <br />
+                  <br />
+                  <br />
+                  <p></p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+</header>
+{%endblock%}
+
+{% block content %}
+
+<main class="">
+  <div class="container">
+    <!-- section 1 for standards-->
+
+    <section class="text-center">
+                  <div class="row ">
+                    <h1 class="display-4 ">Welcome to Land Information Systems</h1>
+                   <div class="col-md-5 mb-1 mt-3 ">
+                     <row>
+                       <div class="card border-success box-shadow-hover">
+                         <h6 class="card-header"> Land Information System</h6>
+                         <div class="card-body text-success">
+                           <p class="card-text">
+                         A Land Information System is a tool for legal, administrative and economic decision-making and
+                         an aid for planning and development. A land information system consists, on the one hand, of a
+                         database containing spatially referenced land-related data for a defined area and, on the other,
+                         of procedures and techniques for the systematic collection, updating, processing and distribution of the data.
+                         The base of a land information system is a uniform spatial referencing system,
+                         which also simplifies the linking of data within the system with other land-related data.
+                       </p>
+                         </div>
+                       </div>
+                     </row>
+                     <row >
+                       <div class="card border-success box-shadow-hover">
+                         <h6 class="card-header"> Clients use LIS for:</h6>
+                         <div class="card-body text-success">
+                           <p class="card-text">
+                         <ol>
+                           <li>Managing land portfolios and assets.</li>
+                           <li>Reporting land values and viewing land value trends.</li>
+                           <li>Conducting exploration and mine expansion analytics.</li>
+                           <li>Managing permitting and environmental compliance.</li>
+                           <li>Managing land acquisitions.</li>
+                         </ol>
+                       </p>
+                         </div>
+                       </div>
+                     </row>
+                     </div>
+
+                    <div class="col-md-5 mb-3 ms-md-auto mt-3">
+                      <row>
+                        <div class="col-md-12">
+                          <div class="card border-success box-shadow-hover">
+                          <h6 class="card-header"> Our mission</h6>
+                        <div class="card-body text-success">
+                          <p class="card-text">
+                          The Land Portal Foundation believes access to information is crucial to achieve good land governance and to secure
+                          land rights for vulnerable people.
+                          We help partners to create and disseminate land governance
+                          data and information through linked and open data technologies.
+                          </p>
+                        </div>
+                        </div>
+                        </div>
+                      </row>
+                    </div>
+                  </div>
+
+    </section>
+  </div>
+</main>
+
+{%endblock%}
