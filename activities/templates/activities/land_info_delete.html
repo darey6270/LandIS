@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block title %} Delete a registered land {% endblock %}
+
+{% block image_block %}
+<header class="info-header">
+  <div id="page-intro" class="container-fluid d-flex align-items-center justify-content-center ">
+    <div class="row d-flex justify-content-center text-center">
+      <div class="col text-white">
+        <!-- heading -->
+        <h2 class="display-4 font-weight-bold  p-5 " style="color:#ff5722;" > Land deletion </h2>
+        <div class="row d-flex justify-content-center text-center">
+
+        </div>
+
+        <!-- divider -->
+        <hr style="color:#ff5722;">
+
+        <!-- description -->
+  </div>
+</header>
+{% endblock %}
+
+
+
+{% block content %}
+
+<section id="best-features" class="text-center">
+              <h2 class="mb-5 font-weight-bold" style="color:#f8e0d8;">Delete a land at {{land.location}} with the price of {{land.price}}</h2>
+              <!-- class row for description-->
+</section>
+
+<h3 class="mb-4" style="color:#ff5722;">Are you sure you want to delete this land?</h3>
+
+<form method="post">
+  {% csrf_token %}
+  <div class="row">
+        <div class="col-md-4 mb-3 mr-3">
+                <input type="submit" value="Delete" class="btn btn-danger btn-block">
+        </div>
+        <div class="col-md-4 mb-3 mr-3">
+                <a href="{% url 'activities:land_info_detail' pk=land.pk %}" class="btn btn-warning btn-block">Cancel Deletion</a>
+        </div>
+  </div>
+</form>
+
+{% endblock %}
